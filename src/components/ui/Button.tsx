@@ -15,14 +15,14 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-primary to-primary-container text-on-primary",
+    "bg-gradient-to-r from-chaos-pink to-chaos-purple text-white shadow-lg shadow-chaos-pink/20 hover:shadow-chaos-pink/40",
   outline:
-    "border border-primary/30 bg-surface-variant/20 backdrop-blur-md text-primary hover:bg-surface-variant/40",
-  ghost: "text-on-surface-variant hover:text-primary",
+    "border border-chaos-pink/30 bg-surface-variant/20 backdrop-blur-md text-chaos-pink hover:bg-surface-variant/40 hover:border-chaos-pink/50",
+  ghost: "text-on-surface-variant hover:text-chaos-pink",
   secondary:
-    "bg-secondary text-on-secondary",
+    "bg-chaos-blue text-on-secondary shadow-lg shadow-chaos-blue/20",
   glass:
-    "bg-surface-bright/50 backdrop-blur-md",
+    "bg-surface-bright/50 backdrop-blur-md hover:bg-surface-bright/70",
 };
 
 const sizeStyles: Record<string, string> = {

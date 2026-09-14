@@ -20,7 +20,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "Lace",
-  description: "Intimate games for queer couples",
+  description: "queer couple games built with chaos, caffeine, and way too much estrogen 🐇💗",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0c0b12",
+  themeColor: "#0a0818",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,

@@ -31,7 +31,7 @@ export default function GamesPage() {
               Choose a Deck
             </h1>
             <p className="text-on-surface-variant text-lg">
-              Pick a card deck to play with. Cards are filtered through both partners&apos; limits.
+              Pick a card deck to play with. Cards are filtered through both partners&apos; limits. 🐰
             </p>
           </div>
 

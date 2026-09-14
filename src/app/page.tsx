@@ -63,7 +63,7 @@ export default function Home() {
         </div>
 
         <p className="text-on-surface-variant text-lg animate-fade-in-up stagger-1" style={{ animationDelay: "0.1s", animationFillMode: "both" }}>
-          Intimate games for queer couples. No accounts. No cloud. Everything stays on your device.
+          queer couple games built with chaos, caffeine, and way too much estrogen 🐇💗
         </p>
 
         {step === "profiles" && (
@@ -94,9 +94,9 @@ export default function Home() {
             </div>
             <Link
               href="/games"
-              className="block w-full py-4 rounded-xl bg-gradient-to-r from-secondary to-primary text-on-secondary font-bold text-lg text-center hover:opacity-90 transition-all hover-lift border-glow relative overflow-hidden"
+              className="block w-full py-4 rounded-xl bg-gradient-to-r from-chaos-blue via-chaos-pink to-chaos-purple text-white font-bold text-lg text-center hover:opacity-90 transition-all hover-lift border-glow relative overflow-hidden animate-pulse-glow"
             >
-              <span className="relative z-10">Choose a Game</span>
+              <span className="relative z-10">🎮 Choose a Game 🐰</span>
               <div className="absolute inset-0 animate-shimmer" />
             </Link>
           </div>

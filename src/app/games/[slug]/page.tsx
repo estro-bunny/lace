@@ -106,7 +106,7 @@ export default function GamePage() {
               {deck.name}
             </h1>
             <p className="text-on-surface-variant">
-              {deck.cards.length} cards &middot; Filtered through your limits
+              {deck.cards.length} cards &middot; Filtered through your limits ✨
             </p>
           </div>
 

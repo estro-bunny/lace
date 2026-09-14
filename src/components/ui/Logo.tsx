@@ -17,7 +17,7 @@ export default function Logo({ size = "md" }: { size?: "sm" | "md" | "lg" }) {
   return (
     <Link href="/" className="no-underline flex items-center gap-2 group">
       <div className="relative animate-breathe">
-        <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 rounded-full bg-chaos-pink/25 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <Image
           src="/logo.png"
           alt="Lace"

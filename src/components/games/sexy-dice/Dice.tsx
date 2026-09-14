@@ -28,11 +28,15 @@ export default function Dice({ value, isRolling, label }: DiceProps) {
         className={`
           relative w-24 h-24 md:w-28 md:h-28 rounded-2xl
           bg-gradient-to-br from-surface-container-high to-surface-container
-          border border-outline-variant/40
-          shadow-[0_0_20px_rgba(255,0,255,0.15)]
+          border ${isRolling ? "border-chaos-pink/60" : "border-outline-variant/40"}
+          ${isRolling
+            ? "shadow-[0_0_30px_rgba(255,105,180,0.4)] animate-dice-shake"
+            : value
+            ? "shadow-[0_0_25px_rgba(96,165,250,0.3)] animate-bounce-in"
+            : "shadow-[0_0_20px_rgba(255,105,180,0.15)]"
+          }
           flex items-center justify-center
-          transition-transform duration-200
-          ${isRolling ? "animate-dice-shake" : ""}
+          transition-all duration-300
         `}
       >
         <svg viewBox="0 0 100 100" className="w-16 h-16 md:w-20 md:h-20">
@@ -42,16 +46,16 @@ export default function Dice({ value, isRolling, label }: DiceProps) {
               cx={cx}
               cy={cy}
               r="10"
-              className="fill-primary"
+              className={`${isRolling ? "fill-chaos-pink" : "fill-chaos-blue"} transition-colors duration-200`}
             />
           ))}
         </svg>
         {!value && !isRolling && (
-          <span className="absolute text-3xl text-on-surface-variant/40 select-none">?</span>
+          <span className="absolute text-3xl text-on-surface-variant/40 select-none animate-breathe">?</span>
         )}
       </div>
       {value && !isRolling && (
-        <span className="text-2xl font-black font-headline text-primary">
+        <span className="text-2xl font-black font-headline text-chaos-blue animate-celebration">
           {value}
         </span>
       )}

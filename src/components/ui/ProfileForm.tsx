@@ -86,7 +86,7 @@ export default function ProfileForm({ onSave }: ProfileFormProps) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your name"
-          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200"
+          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/40 focus:border-chaos-pink focus:ring-2 focus:ring-chaos-pink/20 focus:outline-none transition-all duration-200"
         />
       </div>
 
@@ -97,7 +97,7 @@ export default function ProfileForm({ onSave }: ProfileFormProps) {
         <select
           value={pronouns}
           onChange={(e) => setPronouns(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200"
+          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface focus:border-chaos-pink focus:ring-2 focus:ring-chaos-pink/20 focus:outline-none transition-all duration-200"
         >
           {PRONOUN_OPTIONS.map((opt) => (
             <option key={opt} value={opt}>{opt}</option>
@@ -112,7 +112,7 @@ export default function ProfileForm({ onSave }: ProfileFormProps) {
         <select
           value={genderIdentity}
           onChange={(e) => setGenderIdentity(e.target.value as GenderIdentity)}
-          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200"
+          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface focus:border-chaos-purple focus:ring-2 focus:ring-chaos-purple/20 focus:outline-none transition-all duration-200"
         >
           {GENDER_OPTIONS.map((opt) => (
             <option key={opt} value={opt}>{opt}</option>
@@ -131,7 +131,7 @@ export default function ProfileForm({ onSave }: ProfileFormProps) {
               onClick={() => toggleBodyConfig(config)}
               className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 border ${
                 bodyConfigurations.includes(config)
-                  ? "bg-primary/20 text-primary border-primary/40 shadow-sm shadow-primary/10"
+                  ? "bg-chaos-pink/20 text-chaos-pink border-chaos-pink/40 shadow-sm shadow-chaos-pink/10"
                   : "bg-surface-container-high text-on-surface-variant border-outline-variant/20 hover:text-on-surface hover:border-outline-variant/40"
               }`}
             >
@@ -163,16 +163,16 @@ export default function ProfileForm({ onSave }: ProfileFormProps) {
           value={softLimits}
           onChange={(e) => setSoftLimits(e.target.value)}
           placeholder="e.g. light biting, hair pulling"
-          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/40 focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all duration-200"
+          className="w-full px-4 py-3 rounded-xl bg-surface-container border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/40 focus:border-chaos-blue focus:ring-2 focus:ring-chaos-blue/20 focus:outline-none transition-all duration-200"
         />
       </div>
 
       <button
         onClick={handleSubmit}
         disabled={!name.trim()}
-        className="w-full py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-on-primary font-bold text-lg hover:opacity-90 transition-all duration-200 hover-lift disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:transform-none relative overflow-hidden"
+        className="w-full py-3 rounded-xl bg-gradient-to-r from-chaos-pink via-chaos-purple to-chaos-blue text-white font-bold text-lg hover:opacity-90 transition-all duration-200 hover-lift disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:transform-none relative overflow-hidden animate-pulse-glow"
       >
-        <span className="relative z-10">Save Profile</span>
+        <span className="relative z-10">Save Profile ✨</span>
         <div className="absolute inset-0 animate-shimmer" />
       </button>
     </div>

@@ -50,17 +50,18 @@ export default function SexyDice({
     <div className="w-full max-w-4xl mx-auto space-y-10">
       <div className="flex justify-center items-center gap-10 md:gap-16">
         <Dice value={dice1} isRolling={isRolling} label="Card Draw" />
+        <span className="text-3xl animate-breathe">🎲</span>
         <Dice value={dice2} isRolling={isRolling} label="Intensity" />
       </div>
 
       <div className="flex justify-center gap-4">
         <Button
           size="lg"
-          className="rounded-xl min-w-[180px]"
+          className={`rounded-xl min-w-[180px] ${isRolling ? "animate-dice-shake" : "animate-pulse-glow"}`}
           onClick={handleRoll}
           disabled={isRolling}
         >
-          {isRolling ? "ROLLING..." : hasRolled ? "ROLL AGAIN" : "ROLL"}
+          {isRolling ? "🎲 ROLLING..." : hasRolled ? "🔄 ROLL AGAIN" : "🎲 ROLL"}
         </Button>
         {hasRolled && !isRolling && (
           <Button variant="outline" size="lg" className="rounded-xl" onClick={handleReset}>
@@ -70,7 +71,7 @@ export default function SexyDice({
       </div>
 
       {currentCard && !isRolling && (
-        <div className="animate-fade-in">
+        <div className="animate-celebration">
           <CardRenderer card={{ ...currentCard, text: renderCardText(currentCard.text, profiles) }} />
         </div>
       )}
@@ -78,7 +79,7 @@ export default function SexyDice({
       {isRolling && (
         <div className="text-center py-6">
           <p className="text-xl text-on-surface-variant animate-pulse">
-            Rolling the dice...
+            🎲 Rolling the dice... 🎲
           </p>
         </div>
       )}

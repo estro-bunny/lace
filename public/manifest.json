@@ -1,11 +1,11 @@
 {
   "name": "Lace",
   "short_name": "Lace",
-  "description": "Intimate games for queer couples",
+  "description": "queer couple games built with chaos, caffeine, and way too much estrogen 🐇💗",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0c0b12",
-  "theme_color": "#0c0b12",
+  "background_color": "#0a0818",
+  "theme_color": "#0a0818",
   "orientation": "portrait-primary",
   "icons": [
     {
