@@ -8,6 +8,7 @@ import { getCardsWithinLimits } from "@/consent/limits";
 import { renderCardText } from "@/lib/text-renderer";
 import Button from "@/components/ui/Button";
 import CardRenderer from "@/components/ui/CardRenderer";
+import SparkleEffects from "@/components/ui/SparkleEffects";
 
 interface TruthOrDareProps {
   deck: Deck;
@@ -24,7 +25,8 @@ export default function TruthOrDare({
 }: TruthOrDareProps) {
   const [currentCard, setCurrentCard] = useState<DeckCard | null>(null);
   const [filter, setFilter] = useState<"all" | "question" | "action">("all");
-  const [drawKey, setDrawKey] = useState(0);
+  const [cardKey, setCardKey] = useState(0);
+  const [showSparkles, setShowSparkles] = useState(false);
 
   const eligibleCards = getCardsWithinLimits(
     deck.cards.filter((c) => {
@@ -40,44 +42,42 @@ export default function TruthOrDare({
     const card = getRandomCard(eligibleCards);
     if (card) {
       setCurrentCard(card);
-      setDrawKey((k) => k + 1);
+      setCardKey((k) => k + 1);
+      setShowSparkles(true);
+      setTimeout(() => setShowSparkles(false), 1500);
     }
   }, [eligibleCards]);
 
   const reset = useCallback(() => {
     setCurrentCard(null);
-    setDrawKey(0);
+    setCardKey(0);
+    setShowSparkles(false);
   }, []);
 
   const filterButtons = [
-    { key: "all" as const, label: "All", color: "chaos-pink" },
-    { key: "question" as const, label: "Truth", color: "chaos-blue" },
-    { key: "action" as const, label: "Dare", color: "error" },
+    { key: "all" as const, label: "All", emoji: "✨", color: "#ff69b4" },
+    { key: "question" as const, label: "Truth", emoji: "❓", color: "#60a5fa" },
+    { key: "action" as const, label: "Dare", emoji: "🔥", color: "#ff6b6b" },
   ];
 
   return (
     <div className="w-full max-w-4xl mx-auto space-y-10">
       <div className="flex justify-center gap-4">
-        {filterButtons.map(({ key, label, color }) => (
+        {filterButtons.map(({ key, label, emoji, color }) => (
           <button
             key={key}
             onClick={() => { setFilter(key); setCurrentCard(null); }}
             className={`px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 ${
               filter === key
-                ? `bg-${color} text-white shadow-lg shadow-${color}/30 animate-pulse-glow`
+                ? "text-white shadow-lg"
                 : "bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest"
             }`}
             style={filter === key ? {
-              backgroundColor: key === "all" ? "#ff69b4" : key === "question" ? "#60a5fa" : "#ff6b6b",
-              boxShadow: key === "all"
-                ? "0 4px 20px rgba(255,105,180,0.3)"
-                : key === "question"
-                ? "0 4px 20px rgba(96,165,250,0.3)"
-                : "0 4px 20px rgba(255,107,107,0.3)"
+              backgroundColor: color,
+              boxShadow: `0 4px 20px ${color}50`,
             } : undefined}
           >
-            {key === "question" ? "❓ " : key === "action" ? "🔥 " : "✨ "}
-            {label}
+            {emoji} {label}
           </button>
         ))}
       </div>
@@ -98,16 +98,18 @@ export default function TruthOrDare({
         )}
       </div>
 
-      {currentCard && (
-        <div key={drawKey} className="animate-fade-in">
+      <div className="relative">
+        <SparkleEffects active={showSparkles} count={14} />
+        {currentCard && (
           <CardRenderer
+            key={cardKey}
             card={{
               ...currentCard,
               text: renderCardText(currentCard.text, profiles),
             }}
           />
-        </div>
-      )}
+        )}
+      </div>
 
       {eligibleCards.length === 0 && (
         <p className="text-center text-on-surface-variant">

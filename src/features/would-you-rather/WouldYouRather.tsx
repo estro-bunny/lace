@@ -7,6 +7,8 @@ import { getRandomCard } from "@/lib/engine/deck-loader";
 import { getCardsWithinLimits } from "@/consent/limits";
 import { renderCardText } from "@/lib/text-renderer";
 import Button from "@/components/ui/Button";
+import CardFlip from "@/components/ui/CardFlip";
+import SparkleEffects from "@/components/ui/SparkleEffects";
 
 interface WouldYouRatherProps {
   deck: Deck;
@@ -22,7 +24,9 @@ export default function WouldYouRather({
   sharedSoftLimits,
 }: WouldYouRatherProps) {
   const [currentCard, setCurrentCard] = useState<DeckCard | null>(null);
-  const [drawKey, setDrawKey] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [cardKey, setCardKey] = useState(0);
+  const [showSparkles, setShowSparkles] = useState(false);
 
   const eligibleCards = getCardsWithinLimits(
     deck.cards.filter((c) => c.category !== "aftercare"),
@@ -32,16 +36,23 @@ export default function WouldYouRather({
   );
 
   const draw = useCallback(() => {
+    setIsFlipped(false);
+    setShowSparkles(false);
     const card = getRandomCard(eligibleCards);
     if (card) {
       setCurrentCard(card);
-      setDrawKey((k) => k + 1);
+      setCardKey((k) => k + 1);
+      setTimeout(() => setIsFlipped(true), 150);
+      setTimeout(() => setShowSparkles(true), 900);
+      setTimeout(() => setShowSparkles(false), 2500);
     }
   }, [eligibleCards]);
 
   const reset = useCallback(() => {
     setCurrentCard(null);
-    setDrawKey(0);
+    setIsFlipped(false);
+    setCardKey(0);
+    setShowSparkles(false);
   }, []);
 
   const renderedText = currentCard
@@ -67,19 +78,26 @@ export default function WouldYouRather({
       </div>
 
       {currentCard && renderedText && (
-        <div key={drawKey} className="text-center space-y-6">
-          <div className="animate-spin-in">
-            <div className="glass-card rounded-2xl border border-chaos-purple/30 p-8 max-w-2xl mx-auto relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-chaos-blue/10 via-transparent to-chaos-purple/10 opacity-60" />
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-chaos-blue via-chaos-pink to-chaos-purple" />
-              <span className="text-xs font-bold uppercase tracking-widest text-chaos-blue mb-4 block animate-flash relative z-10">
-                ✨ Would you rather... ✨
-              </span>
-              <p className="text-2xl md:text-3xl font-headline font-bold text-on-surface leading-snug relative z-10">
-                {renderedText}
-              </p>
-            </div>
-          </div>
+        <div key={cardKey} className="relative">
+          <SparkleEffects active={showSparkles} count={16} color="#c084fc" />
+          <CardFlip
+            isFlipped={isFlipped}
+            front={
+              <div className="relative w-full max-w-lg mx-auto">
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-chaos-blue/25 via-chaos-pink/15 to-chaos-purple/25 blur-sm opacity-70" />
+                <div className="relative glass-card rounded-2xl border border-chaos-purple/30 p-8 space-y-5 overflow-hidden min-h-[300px]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-chaos-blue/10 via-transparent to-chaos-purple/10 opacity-60" />
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-chaos-blue via-chaos-pink to-chaos-purple" />
+                  <span className="text-xs font-bold uppercase tracking-widest text-chaos-blue block relative z-10">
+                    ✨ Would you rather... ✨
+                  </span>
+                  <p className="text-2xl md:text-3xl font-headline font-bold text-on-surface leading-snug relative z-10">
+                    {renderedText}
+                  </p>
+                </div>
+              </div>
+            }
+          />
         </div>
       )}
 

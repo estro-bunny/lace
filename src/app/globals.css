@@ -492,3 +492,14 @@ img {
   outline: 2px solid var(--color-secondary);
   outline-offset: 2px;
 }
+
+/* ========== 3D CARD FLIP ========== */
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
