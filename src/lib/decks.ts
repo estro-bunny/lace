@@ -16,8 +16,8 @@ export const DECKS: Record<DeckId, Card[]> = {
 export const AFTERCARE_CARDS: Card[] = raw["__aftercare"] as Card[];
 
 export const DECK_META: DeckMeta[] = [
-  { id: "truth-or-dare", name: "Truth or Dare", emoji: "🔥", accentVar: "rgba(255,77,157,.20)", game: "tod" },
-  { id: "would-you-rather", name: "Would You Rather", emoji: "🤔", accentVar: "rgba(143,194,255,.20)", game: "wyr" },
-  { id: "sapphic", name: "Sapphic Intimacy", emoji: "💜", accentVar: "rgba(199,155,255,.22)", game: "dice" },
-  { id: "foreplay-roulette", name: "Foreplay Roulette", emoji: "🎯", accentVar: "rgba(255,176,32,.18)", game: "roulette" },
+  { id: "truth-or-dare", name: "Truth or Dare", emoji: "🔥", accentVar: "rgba(255,105,180,.22)", game: "tod" },
+  { id: "would-you-rather", name: "Would You Rather", emoji: "🤔", accentVar: "rgba(91,192,235,.22)", game: "wyr" },
+  { id: "sapphic", name: "Sapphic Intimacy", emoji: "💜", accentVar: "rgba(199,155,255,.24)", game: "dice" },
+  { id: "foreplay-roulette", name: "Foreplay Roulette", emoji: "🎯", accentVar: "rgba(255,176,32,.20)", game: "roulette" },
 ];
