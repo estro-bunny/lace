@@ -2,6 +2,7 @@ const LOOP = "M22 9 C29 9 29 19 22 19 C15 19 15 9 22 9";
 
 export function SessionKnot({ dealtTotal }: { dealtTotal: number }) {
   const on = [dealtTotal >= 2, dealtTotal >= 5, dealtTotal >= 9, dealtTotal >= 14];
+  const fullyKnotted = dealtTotal >= 14;
   const caption =
     dealtTotal === 0
       ? "Tonight's knot: still loose. Chaos pending."
@@ -15,7 +16,11 @@ export function SessionKnot({ dealtTotal }: { dealtTotal: number }) {
 
   return (
     <div className="mt-2.5 flex items-center gap-2.5">
-      <svg viewBox="0 0 44 44" className="h-[34px] w-[34px] flex-none" aria-hidden="true">
+      <svg
+        viewBox="0 0 44 44"
+        className={`h-[34px] w-[34px] flex-none ${fullyKnotted ? "knot-pulse" : ""}`}
+        aria-hidden="true"
+      >
         <circle cx={22} cy={22} r={13} fill="none" stroke="var(--thread-lit)" strokeWidth={1.6} className="transition-accent" />
         {[0, 90, 180, 270].map((rot, i) => (
           <path
