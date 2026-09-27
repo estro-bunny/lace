@@ -70,14 +70,35 @@ body {
   }
 }
 
+/*
+ * heat-shimmer — multi-phase thread glow.
+ * Opacity is always a multiple of --heat so intensity still gates visibility.
+ * stroke-width adds a soft "thread thickening" as light moves through the lace.
+ */
 @keyframes heat-shimmer {
-  0%,
+  0% {
+    opacity: var(--heat);
+    stroke-width: 1.05;
+  }
+  20% {
+    opacity: calc(var(--heat) * 1.18);
+    stroke-width: 1.2;
+  }
+  45% {
+    opacity: calc(var(--heat) * 1.42);
+    stroke-width: 1.38;
+  }
+  65% {
+    opacity: calc(var(--heat) * 1.22);
+    stroke-width: 1.22;
+  }
+  80% {
+    opacity: calc(var(--heat) * 1.08);
+    stroke-width: 1.12;
+  }
   100% {
     opacity: var(--heat);
-  }
-  50% {
-    /* shimmer peaks a little above the base heat */
-    opacity: calc(var(--heat) * 1.35);
+    stroke-width: 1.05;
   }
 }
 
@@ -111,11 +132,12 @@ body {
 .lace-lattice .heat {
   stroke: var(--thread-lit);
   opacity: var(--heat);
+  stroke-width: 1.1;
   transition:
     stroke 1s cubic-bezier(0.22, 0.61, 0.36, 1),
     opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1);
-  /* soft thread shimmer — more visible as --heat rises */
-  animation: heat-shimmer 5.5s ease-in-out infinite;
+  /* soft multi-phase thread shimmer — stronger as --heat rises */
+  animation: heat-shimmer 6.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 .lace-bloom {
   position: absolute;
