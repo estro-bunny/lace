@@ -26,12 +26,12 @@ export function DecksScreen({ onOpenDeck, onPrintDeck }: DecksScreenProps) {
   return (
     <div className="flex flex-1 flex-col">
       <div className="px-[22px] pb-0.5 pt-1.5">
-        <h1 className="font-display text-[27px] font-medium tracking-[-0.018em]">Choose a deck</h1>
+        <h1 className="font-display text-[27px] font-medium tracking-[-0.018em]">Pick your chaos</h1>
         <p className="mt-1 text-[12.5px] text-silk-faint">
-          Every deck is filtered through both profiles' limits before a card is dealt.
+          Every deck is filtered through both profiles' limits before a card is dealt. No accidental wildcards.
         </p>
         {store.houseRule && (
-          <p className="font-display mt-2 text-[13px] italic text-accent transition-accent">&quot;{store.houseRule}&quot;</p>
+          <p className="font-display mt-2 text-[13px] italic text-accent transition-accent">"{store.houseRule}"</p>
         )}
         <SessionKnot dealtTotal={store.dealtTotal} />
       </div>
