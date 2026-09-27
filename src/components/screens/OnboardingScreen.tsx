@@ -42,7 +42,7 @@ export function OnboardingScreen({ onDone }: OnboardingScreenProps) {
     });
     reset();
     if (step === 1) {
-      toast("Both profiles saved");
+      toast("Both profiles locked in. Chaos can commence.");
       onDone();
     }
   }
@@ -66,8 +66,8 @@ export function OnboardingScreen({ onDone }: OnboardingScreenProps) {
         </h1>
         <p className="mt-1.5 text-[13.5px] leading-normal text-silk-faint">
           {step === 0
-            ? "Two profiles, so every card can be filtered through what you're both okay with."
-            : "Same deal — this one's just for them."}
+            ? "Two profiles so every card gets filtered through what you're both actually okay with. No surprises."
+            : "Same deal — this one's just for them. Be honest. Cute, but honest."}
         </p>
       </div>
 
