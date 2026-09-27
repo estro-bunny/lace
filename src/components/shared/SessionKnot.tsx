@@ -4,14 +4,14 @@ export function SessionKnot({ dealtTotal }: { dealtTotal: number }) {
   const on = [dealtTotal >= 2, dealtTotal >= 5, dealtTotal >= 9, dealtTotal >= 14];
   const caption =
     dealtTotal === 0
-      ? "Tonight's knot: not tied yet"
+      ? "Tonight's knot: still loose. Chaos pending."
       : dealtTotal < 5
-        ? `Tonight's knot: ${dealtTotal} card${dealtTotal === 1 ? "" : "s"} in, just starting`
+        ? `Tonight's knot: ${dealtTotal} card${dealtTotal === 1 ? "" : "s"} in — just getting interesting`
         : dealtTotal < 9
-          ? `Tonight's knot: ${dealtTotal} cards in, tightening`
+          ? `Tonight's knot: ${dealtTotal} cards in, tightening. Behaving: 404`
           : dealtTotal < 14
-            ? `Tonight's knot: ${dealtTotal} cards in, properly tied`
-            : `Tonight's knot: ${dealtTotal} cards in, fully knotted`;
+            ? `Tonight's knot: ${dealtTotal} cards in, properly tied. No take-backs.`
+            : `Tonight's knot: ${dealtTotal} cards in. Fully knotted. Chaos approved.`;
 
   return (
     <div className="mt-2.5 flex items-center gap-2.5">
