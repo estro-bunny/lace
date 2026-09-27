@@ -112,6 +112,24 @@ body {
   }
 }
 
+/* Soft glow pulse on the session knot once it's fully tied */
+@keyframes knot-pulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 transparent);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 55%, transparent));
+    transform: scale(1.06);
+  }
+}
+
+.knot-pulse {
+  animation: knot-pulse 2.8s ease-in-out infinite;
+  transform-origin: center;
+}
+
 /* ── the lace lattice background ── */
 .lace-lattice {
   position: absolute;
@@ -321,7 +339,8 @@ body {
   }
 
   .lace-bloom,
-  .lace-lattice .heat {
+  .lace-lattice .heat,
+  .knot-pulse {
     animation: none !important;
   }
 }
