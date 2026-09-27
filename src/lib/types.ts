@@ -9,18 +9,19 @@ export const TIER_OF: Record<TierName, Tier> = {
   intense: 3,
 };
 
+/** Signature EstroBunny heat curve: powder blue → hot pink → soft violet → chaotic pink */
 export const HUE: Record<TierName, string> = {
-  gentle: "#8FC2FF",
-  moderate: "#FF4D9D",
+  gentle: "#5BC0EB",
+  moderate: "#FF69B4",
   steamy: "#C79BFF",
-  intense: "#FF6BA8",
+  intense: "#FF4D9D",
 };
 
 export const HEAT: Record<TierName, number> = {
-  gentle: 0.08,
-  moderate: 0.2,
-  steamy: 0.36,
-  intense: 0.52,
+  gentle: 0.1,
+  moderate: 0.26,
+  steamy: 0.42,
+  intense: 0.62,
 };
 
 export type Pronouns = "she/her" | "he/him" | "they/them" | "ze/zir" | "xe/xem";
