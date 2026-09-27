@@ -9,17 +9,17 @@
   --silk: #fbf0f5;
   --silk-dim: #b8a4c0;
   --silk-faint: #7e6c8c;
-  --rose: #ff4d9d;
-  --powder: #8fc2ff;
+  --rose: #ff69b4;
+  --powder: #5bc0eb;
   --violet: #c79bff;
   --amber: #ffb020;
   --stop: #ff3b5c;
-  --thread: rgba(251, 240, 245, 0.13);
-  --thread-lit: rgba(255, 77, 157, 0.3);
+  --thread: rgba(251, 240, 245, 0.14);
+  --thread-lit: rgba(255, 105, 180, 0.38);
   --hairline: rgba(251, 240, 245, 0.1);
   --accent: var(--rose);
-  --lace-op: 0.5;
-  --heat: 0.2;
+  --lace-op: 0.55;
+  --heat: 0.22;
   color-scheme: dark;
 }
 
@@ -82,16 +82,17 @@ body {
   position: absolute;
   z-index: 0;
   pointer-events: none;
-  width: 135%;
+  width: 140%;
   aspect-ratio: 1;
-  left: -17%;
-  top: -30%;
+  left: -20%;
+  top: -32%;
   background: radial-gradient(
     circle,
-    color-mix(in srgb, var(--accent) 24%, transparent) 0%,
-    transparent 62%
+    color-mix(in srgb, var(--accent) 28%, transparent) 0%,
+    color-mix(in srgb, var(--powder) 8%, transparent) 42%,
+    transparent 68%
   );
-  filter: blur(40px);
+  filter: blur(44px);
   transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -99,7 +100,7 @@ body {
 .lace-card {
   background: linear-gradient(
     168deg,
-    color-mix(in srgb, var(--accent) 13%, var(--ink-3)) 0%,
+    color-mix(in srgb, var(--accent) 15%, var(--ink-3)) 0%,
     var(--ink-2) 58%
   );
   border: 1px solid rgba(251, 240, 245, 0.14);
