@@ -60,7 +60,7 @@ export function DecksScreen({ onOpenDeck, onPrintDeck }: DecksScreenProps) {
                 />
                 {empty && (
                   <span className="absolute right-[11px] top-[11px] rounded-full border border-stop/35 bg-stop/[0.14] px-1.5 py-0.5 text-[9.5px] font-semibold text-stop">
-                    none in range
+                    cool off?
                   </span>
                 )}
                 <button
@@ -77,7 +77,9 @@ export function DecksScreen({ onOpenDeck, onPrintDeck }: DecksScreenProps) {
                 <span className="text-[22px]">{d.emoji}</span>
                 <h3 className="font-display mt-2 text-[16.5px] font-semibold tracking-[-0.01em]">{d.name}</h3>
                 <span className="text-[11.5px] text-silk-faint">
-                  {available.length} of {total || "—"} in range
+                  {empty
+                    ? "nothing in range — raise the ceiling or cool off"
+                    : `${available.length} of ${total || "—"} in range`}
                 </span>
               </div>
             );
