@@ -44,7 +44,7 @@ export function GameScreen({ deckId, onBackToDecks }: GameScreenProps) {
   useEffect(() => {
     if (store.mode !== "play") return;
     if (store.dealt > 0 && store.dealt % 7 === 0) {
-      setBanner("You've been at this a while. Cooling down is always available.");
+      setBanner("You've been at this a while. Cooling down is always available — no judgment, just options.");
     }
   }, [store.dealt, store.mode]);
 
@@ -61,10 +61,10 @@ export function GameScreen({ deckId, onBackToDecks }: GameScreenProps) {
       store.applyPass(pendingPass, reason);
       toast(
         reason === "never"
-          ? `Filtered out: ${pendingPass.tags.join(", ")}`
+          ? `Filtered for good: ${pendingPass.tags.join(", ")}. The deck got the memo.`
           : reason === "tonight"
-            ? "Won't come up again tonight"
-            : `Eased down to whatever's next`,
+            ? "Skipped for tonight. Won't come up again this session."
+            : "Eased down a notch. Soft chaos only from here.",
       );
     }
     setPendingPass(null);
@@ -76,13 +76,13 @@ export function GameScreen({ deckId, onBackToDecks }: GameScreenProps) {
     if (navigator.vibrate) navigator.vibrate([16, 60, 16]);
     if (level === "slow") {
       store.setSharedTier(Math.max(0, store.sharedTier - 1) as typeof store.sharedTier);
-      setBanner(`Held lower. Take as long as you want.`);
+      setBanner("Held lower. Take as long as you want — the deck can wait.");
     } else if (level === "stop") {
       store.enterAftercare();
       setBanner("Stopped. Nothing else is coming unless you ask for it.");
     } else {
       store.enterAftercare();
-      toast("Screen cleared");
+      toast("Screen cleared. Breathe.");
     }
   }
 
@@ -101,6 +101,7 @@ export function GameScreen({ deckId, onBackToDecks }: GameScreenProps) {
               onClick={() => {
                 undoFn();
                 setUndoFn(null);
+                toast("Undone. A few seconds of mercy, no questions asked.");
               }}
               className="flex items-center gap-1 text-xs text-silk-faint hover:text-silk"
             >
@@ -138,7 +139,7 @@ export function GameScreen({ deckId, onBackToDecks }: GameScreenProps) {
               store.exitAftercare();
               setBanner(null);
               onBackToDecks();
-              toast("Back whenever you're ready");
+              toast("Back whenever you're ready. Chaos on pause.");
             }}
           />
         ) : (
