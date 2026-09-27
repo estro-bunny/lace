@@ -16,7 +16,7 @@ export function SettingsSheet({ open, onOpenChange, onStartedOver }: SettingsShe
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent aria-describedby="settings-desc">
         <SheetTitle>Settings</SheetTitle>
-        <SheetDescription id="settings-desc">Everything here lives only in this browser.</SheetDescription>
+        <SheetDescription id="settings-desc">Everything here lives only in this browser. No phones home.</SheetDescription>
 
         <ClearFiltersRow onDone={() => onOpenChange(false)} />
 
@@ -33,7 +33,7 @@ export function SettingsSheet({ open, onOpenChange, onStartedOver }: SettingsShe
           <span>
             <span className="block text-[14.5px] font-medium text-silk">Start over</span>
             <span className="mt-0.5 block text-xs leading-snug text-silk-faint">
-              Clears both profiles and this session. Can&apos;t be undone.
+              Clears both profiles and this session. Can't be undone.
             </span>
           </span>
         </button>
@@ -53,7 +53,7 @@ function ClearFiltersRow({ onDone }: { onDone: () => void }) {
     <button
       onClick={() => {
         useLaceStore.setState({ sessionSkip: [], extraHardTags: [] });
-        toast("Session skips cleared");
+        toast("Session skips cleared. Fresh chaos.");
         onDone();
       }}
       className="mb-2 flex w-full items-start gap-3 rounded-ctl border border-hairline bg-white/[0.03] px-3.5 py-3.5 text-left transition-colors hover:border-white/25 active:scale-[0.985]"
@@ -62,7 +62,7 @@ function ClearFiltersRow({ onDone }: { onDone: () => void }) {
       <span>
         <span className="block text-[14.5px] font-medium text-silk">Clear session skips</span>
         <span className="mt-0.5 block text-xs leading-snug text-silk-faint">
-          Un-hide cards you passed with &quot;not tonight&quot; or &quot;not ever.&quot;
+          Un-hide cards you passed with "not tonight" or "not ever."
         </span>
       </span>
     </button>
