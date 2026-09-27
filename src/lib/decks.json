@@ -1,0 +1,1055 @@
+{
+ "truth-or-dare": [
+  {
+   "id": "tod-t01",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "What is your favorite memory of us together?",
+   "tags": [
+    "truth",
+    "emotional",
+    "memory"
+   ]
+  },
+  {
+   "id": "tod-t02",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "When did you first know you had feelings for me?",
+   "tags": [
+    "truth",
+    "emotional",
+    "feelings"
+   ]
+  },
+  {
+   "id": "tod-t03",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "What is something you find attractive about me that you have never told me?",
+   "tags": [
+    "truth",
+    "attraction",
+    "compliment"
+   ]
+  },
+  {
+   "id": "tod-t04",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "What is a fantasy you have thought about but never mentioned?",
+   "tags": [
+    "truth",
+    "fantasy"
+   ]
+  },
+  {
+   "id": "tod-t05",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Where on your body do you most want to be touched right now?",
+   "tags": [
+    "truth",
+    "desire",
+    "touch"
+   ]
+  },
+  {
+   "id": "tod-t06",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "What is the most adventurous thing you have done in bed?",
+   "tags": [
+    "truth",
+    "adventure",
+    "experience"
+   ]
+  },
+  {
+   "id": "tod-t07",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "What song reminds you of me?",
+   "tags": [
+    "truth",
+    "romantic",
+    "music"
+   ]
+  },
+  {
+   "id": "tod-t08",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "What is your favorite thing about our relationship?",
+   "tags": [
+    "truth",
+    "relationship"
+   ]
+  },
+  {
+   "id": "tod-t09",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Describe your perfect intimate evening with me.",
+   "tags": [
+    "truth",
+    "fantasy",
+    "romantic"
+   ]
+  },
+  {
+   "id": "tod-t10",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "What is a small thing I do that makes you smile?",
+   "tags": [
+    "truth",
+    "appreciation"
+   ]
+  },
+  {
+   "id": "tod-d01",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Give {partner1} a 60-second massage on the body part of your choice.",
+   "tags": [
+    "dare",
+    "massage",
+    "touch"
+   ]
+  },
+  {
+   "id": "tod-d02",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Kiss {partner1} somewhere you have never kissed them before.",
+   "tags": [
+    "dare",
+    "kissing",
+    "exploration"
+   ]
+  },
+  {
+   "id": "tod-d03",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Whisper three things you want to do to {partner1} tonight.",
+   "tags": [
+    "dare",
+    "words",
+    "desire"
+   ]
+  },
+  {
+   "id": "tod-d04",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Spend two minutes kissing {partner1} without using your hands.",
+   "tags": [
+    "dare",
+    "kissing",
+    "challenge"
+   ]
+  },
+  {
+   "id": "tod-d05",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Remove one piece of your own clothing while maintaining eye contact with {partner1}.",
+   "tags": [
+    "dare",
+    "undressing",
+    "intimate"
+   ]
+  },
+  {
+   "id": "tod-d06",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Let {partner1} choose where you place three kisses on {partner1_object} body.",
+   "tags": [
+    "dare",
+    "kissing",
+    "intimate"
+   ]
+  },
+  {
+   "id": "tod-d07",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Hold {partner1} close and sway slowly together for one minute. No talking.",
+   "tags": [
+    "dare",
+    "cuddling",
+    "romantic"
+   ]
+  },
+  {
+   "id": "tod-d08",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Trace your fingertip along {partner1_possessive} inner thigh for 30 seconds.",
+   "tags": [
+    "dare",
+    "touch",
+    "tease"
+   ]
+  },
+  {
+   "id": "tod-d09",
+   "category": "action",
+   "intensity": "intense",
+   "text": "Blindfold {partner1} and spend three minutes exploring {partner1_object} with only your lips.",
+   "tags": [
+    "dare",
+    "sensory",
+    "intimate"
+   ]
+  },
+  {
+   "id": "tod-d10",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Tell {partner1} what you love most about {partner1_object} while looking into {partner1_possessive} eyes.",
+   "tags": [
+    "dare",
+    "words",
+    "romantic"
+   ]
+  },
+  {
+   "id": "tod-t11",
+   "category": "question",
+   "intensity": "intense",
+   "text": "What is the most vulnerable you have felt with me?",
+   "tags": [
+    "truth",
+    "vulnerability",
+    "emotional"
+   ]
+  },
+  {
+   "id": "tod-t12",
+   "category": "question",
+   "intensity": "intense",
+   "text": "What is a boundary you would like to explore together?",
+   "tags": [
+    "truth",
+    "boundaries",
+    "exploration"
+   ]
+  },
+  {
+   "id": "tod-d11",
+   "category": "action",
+   "intensity": "intense",
+   "text": "Straddle {partner1} and kiss {partner1_object} deeply for one minute.",
+   "tags": [
+    "dare",
+    "kissing",
+    "passion"
+   ]
+  },
+  {
+   "id": "tod-d12",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Switch places: {partner1} leads for the next five minutes. Follow {partner1_object} completely.",
+   "tags": [
+    "dare",
+    "roles",
+    "switch"
+   ]
+  },
+  {
+   "id": "tod-t13",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "What is your favorite way to be comforted after a long day?",
+   "tags": [
+    "truth",
+    "comfort",
+    "care"
+   ]
+  },
+  {
+   "id": "tod-t14",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "What is a kink or interest you are curious about?",
+   "tags": [
+    "truth",
+    "curiosity",
+    "kink"
+   ]
+  },
+  {
+   "id": "tod-t15",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Describe the last time you thought about me in a sexual way.",
+   "tags": [
+    "truth",
+    "desire",
+    "sexual"
+   ]
+  },
+  {
+   "id": "tod-d13",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Kiss down {partner1_possessive} neck while pressing {partner1_object} gently against a wall.",
+   "tags": [
+    "dare",
+    "kissing",
+    "passion"
+   ]
+  }
+ ],
+ "would-you-rather": [
+  {
+   "id": "wyr-001",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "Would you rather be kissed on the neck for ten minutes or have your back massaged for ten minutes?",
+   "tags": [
+    "choices",
+    "touch",
+    "gentle"
+   ]
+  },
+  {
+   "id": "wyr-002",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "Would you rather cuddle on the couch or cuddle in bed?",
+   "tags": [
+    "choices",
+    "cuddling",
+    "comfort"
+   ]
+  },
+  {
+   "id": "wyr-003",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather give a massage or receive a massage?",
+   "tags": [
+    "choices",
+    "massage",
+    "touch"
+   ]
+  },
+  {
+   "id": "wyr-004",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather be blindfolded or have your hands tied?",
+   "tags": [
+    "choices",
+    "sensory",
+    "light-bdsm"
+   ]
+  },
+  {
+   "id": "wyr-005",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Would you rather have slow, passionate sex or fast, urgent sex?",
+   "tags": [
+    "choices",
+    "sex",
+    "style"
+   ]
+  },
+  {
+   "id": "wyr-006",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Would you rather be dominated for a night or dominate for a night?",
+   "tags": [
+    "choices",
+    "power",
+    "d/s"
+   ]
+  },
+  {
+   "id": "wyr-007",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "Would you rather wake up to breakfast in bed or come home to a candlelit dinner?",
+   "tags": [
+    "choices",
+    "romantic",
+    "care"
+   ]
+  },
+  {
+   "id": "wyr-008",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather hear your partner moan your name or whisper dirty things in your ear?",
+   "tags": [
+    "choices",
+    "sound",
+    "intimate"
+   ]
+  },
+  {
+   "id": "wyr-009",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather take a shower together or a bath together?",
+   "tags": [
+    "choices",
+    "bath",
+    "intimate"
+   ]
+  },
+  {
+   "id": "wyr-010",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Would you rather have your partner use their hands only or their mouth only?",
+   "tags": [
+    "choices",
+    "touch",
+    "oral"
+   ]
+  },
+  {
+   "id": "wyr-011",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "Would you rather receive a handwritten love letter or a voice message saying what you mean to me?",
+   "tags": [
+    "choices",
+    "words",
+    "romantic"
+   ]
+  },
+  {
+   "id": "wyr-012",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather make out in a parked car or make out in a public park after dark?",
+   "tags": [
+    "choices",
+    "public",
+    "adventure"
+   ]
+  },
+  {
+   "id": "wyr-013",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Would you rather record yourselves or never have any recordings?",
+   "tags": [
+    "choices",
+    "recording",
+    "intimate"
+   ]
+  },
+  {
+   "id": "wyr-014",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather try something new tonight or repeat your favorite thing?",
+   "tags": [
+    "choices",
+    "exploration",
+    "comfort"
+   ]
+  },
+  {
+   "id": "wyr-015",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "Would you rather hold hands during a movie or have your partner play with your hair?",
+   "tags": [
+    "choices",
+    "touch",
+    "comfort"
+   ]
+  },
+  {
+   "id": "wyr-016",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Would you rather wear matching lingerie or nothing at all?",
+   "tags": [
+    "choices",
+    "clothing",
+    "intimate"
+   ]
+  },
+  {
+   "id": "wyr-017",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather your partner cook for you or give you a massage after a long day?",
+   "tags": [
+    "choices",
+    "care",
+    "comfort"
+   ]
+  },
+  {
+   "id": "wyr-018",
+   "category": "question",
+   "intensity": "intense",
+   "text": "Would you rather bring someone else into your bedroom or keep it strictly between us?",
+   "tags": [
+    "choices",
+    "boundaries",
+    "enm"
+   ]
+  },
+  {
+   "id": "wyr-019",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "Would you rather go on a romantic getaway or have a cozy staycation at home?",
+   "tags": [
+    "choices",
+    "romantic",
+    "travel"
+   ]
+  },
+  {
+   "id": "wyr-020",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather have sex in the morning or at night?",
+   "tags": [
+    "choices",
+    "timing",
+    "sex"
+   ]
+  },
+  {
+   "id": "wyr-021",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "Would you rather be teased until you beg or have a quick release?",
+   "tags": [
+    "choices",
+    "tease",
+    "orgasm"
+   ]
+  },
+  {
+   "id": "wyr-022",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Would you rather role-play a fantasy or have a honest conversation about fantasies?",
+   "tags": [
+    "choices",
+    "fantasy",
+    "communication"
+   ]
+  }
+ ],
+ "sapphic": [
+  {
+   "id": "sapphic-001",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Kiss {partner1} slowly, starting at the corner of {partner1_possessive} mouth.",
+   "tags": [
+    "kissing",
+    "gentle"
+   ]
+  },
+  {
+   "id": "sapphic-002",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Run your fingers through {partner1_possessive} hair while making eye contact.",
+   "tags": [
+    "touch",
+    "intimate"
+   ]
+  },
+  {
+   "id": "sapphic-003",
+   "category": "question",
+   "intensity": "moderate",
+   "text": "Tell {partner1} about a moment when you felt most drawn to them.",
+   "tags": [
+    "communication",
+    "emotional"
+   ]
+  },
+  {
+   "id": "sapphic-004",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Trace the outline of {partner1_possessive} collarbone with your fingertips.",
+   "tags": [
+    "touch",
+    "tease"
+   ]
+  },
+  {
+   "id": "sapphic-005",
+   "category": "challenge",
+   "intensity": "steamy",
+   "text": "Blindfold {partner1} and explore {partner1_object} with just your lips for two minutes.",
+   "tags": [
+    "sensory",
+    "blindfold"
+   ]
+  },
+  {
+   "id": "sapphic-006",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Whisper something you love about {partner1_possessive} body into {partner1_object} ear.",
+   "tags": [
+    "words",
+    "intimate"
+   ]
+  },
+  {
+   "id": "sapphic-007",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Kiss down {partner1_possessive} neck while pressing {partner1_object} gently against a wall.",
+   "tags": [
+    "kissing",
+    "passion"
+   ]
+  },
+  {
+   "id": "sapphic-008",
+   "category": "question",
+   "intensity": "gentle",
+   "text": "What is one fantasy you have never told anyone?",
+   "tags": [
+    "communication",
+    "fantasy"
+   ]
+  },
+  {
+   "id": "sapphic-009",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Take turns telling each other exactly where you want to be touched.",
+   "tags": [
+    "communication",
+    "touch"
+   ]
+  },
+  {
+   "id": "sapphic-010",
+   "category": "challenge",
+   "intensity": "intense",
+   "text": "Use your hands only. No lips. Explore {partner1} for five minutes.",
+   "tags": [
+    "hands",
+    "challenge"
+   ]
+  },
+  {
+   "id": "sapphic-011",
+   "category": "permission",
+   "intensity": "moderate",
+   "text": "Ask {partner1} if you can remove one piece of {partner1_possessive} clothing.",
+   "tags": [
+    "consent",
+    "undressing"
+   ]
+  },
+  {
+   "id": "sapphic-012",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Press your body against {partner1} from behind and hold {partner1_object} there.",
+   "tags": [
+    "body",
+    "closeness"
+   ]
+  },
+  {
+   "id": "sapphic-013",
+   "category": "question",
+   "intensity": "steamy",
+   "text": "What part of your body do you want {partner1} to pay attention to right now?",
+   "tags": [
+    "communication",
+    "desire"
+   ]
+  },
+  {
+   "id": "sapphic-014",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Hold {partner1_possessive} hand and place slow kisses along {partner1_possessive} wrist.",
+   "tags": [
+    "kissing",
+    "gentle"
+   ]
+  },
+  {
+   "id": "sapphic-015",
+   "category": "challenge",
+   "intensity": "moderate",
+   "text": "Switch roles: whoever was leading now follows for the next three minutes.",
+   "tags": [
+    "roles",
+    "switch"
+   ]
+  },
+  {
+   "id": "sapphic-016",
+   "category": "action",
+   "intensity": "intense",
+   "text": "Straddle {partner1} and take your time. Set the pace.",
+   "tags": [
+    "position",
+    "control"
+   ]
+  },
+  {
+   "id": "sapphic-018",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Massage {partner1_possessive} shoulders, then slowly let your hands drift lower.",
+   "tags": [
+    "massage",
+    "tease"
+   ]
+  },
+  {
+   "id": "sapphic-019",
+   "category": "permission",
+   "intensity": "gentle",
+   "text": "Ask {partner1} what {partner1_subject} wants to do next. Follow {partner1_object}.",
+   "tags": [
+    "consent",
+    "communication"
+   ]
+  }
+ ],
+ "foreplay-roulette": [
+  {
+   "id": "fr-001",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Kiss {partner1_possessive} lips softly for 30 seconds.",
+   "tags": [
+    "kissing",
+    "lips",
+    "gentle"
+   ]
+  },
+  {
+   "id": "fr-002",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Run your fingertips along {partner1_possessive} arms.",
+   "tags": [
+    "touch",
+    "arms",
+    "gentle"
+   ]
+  },
+  {
+   "id": "fr-003",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Kiss {partner1_possessive} neck, slowly working your way down.",
+   "tags": [
+    "kissing",
+    "neck",
+    "tease"
+   ]
+  },
+  {
+   "id": "fr-004",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Massage {partner1_possessive} shoulders with firm pressure.",
+   "tags": [
+    "massage",
+    "shoulders",
+    "touch"
+   ]
+  },
+  {
+   "id": "fr-005",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Kiss {partner1_possessive} collarbone while tracing circles on {partner1_possessive} hip.",
+   "tags": [
+    "kissing",
+    "collarbone",
+    "touch"
+   ]
+  },
+  {
+   "id": "fr-006",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Whisper what you want to do to {partner1} into {partner1_possessive} ear.",
+   "tags": [
+    "words",
+    "ear",
+    "desire"
+   ]
+  },
+  {
+   "id": "fr-007",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Hold {partner1} from behind and rest your chin on {partner1_possessive} shoulder.",
+   "tags": [
+    "cuddling",
+    "embrace",
+    "comfort"
+   ]
+  },
+  {
+   "id": "fr-008",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Trace your fingertip along {partner1_possessive} inner thigh.",
+   "tags": [
+    "touch",
+    "thigh",
+    "tease"
+   ]
+  },
+  {
+   "id": "fr-009",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Play with {partner1_possessive} hair while making eye contact.",
+   "tags": [
+    "touch",
+    "hair",
+    "intimate"
+   ]
+  },
+  {
+   "id": "fr-010",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Kiss {partner1_possessive} chest while running your hands down {partner1_possessive} sides.",
+   "tags": [
+    "kissing",
+    "chest",
+    "touch"
+   ]
+  },
+  {
+   "id": "fr-011",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Breathe hot air onto {partner1_possessive} neck without touching.",
+   "tags": [
+    "breath",
+    "neck",
+    "tease"
+   ]
+  },
+  {
+   "id": "fr-012",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Kiss the inside of {partner1_possessive} wrist.",
+   "tags": [
+    "kissing",
+    "wrist",
+    "gentle"
+   ]
+  },
+  {
+   "id": "fr-013",
+   "category": "action",
+   "intensity": "intense",
+   "text": "Kiss {partner1} deeply while pressing {partner1_object} against a wall.",
+   "tags": [
+    "kissing",
+    "passion",
+    "intense"
+   ]
+  },
+  {
+   "id": "fr-014",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Run your tongue along {partner1_possessive} earlobe.",
+   "tags": [
+    "tongue",
+    "ear",
+    "tease"
+   ]
+  },
+  {
+   "id": "fr-015",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Grind against {partner1} slowly while fully clothed.",
+   "tags": [
+    "grinding",
+    "clothed",
+    "tease"
+   ]
+  },
+  {
+   "id": "fr-016",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Place soft kisses along {partner1_possessive} forehead and temples.",
+   "tags": [
+    "kissing",
+    "forehead",
+    "tender"
+   ]
+  },
+  {
+   "id": "fr-017",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Suck gently on {partner1_possessive} finger.",
+   "tags": [
+    "mouth",
+    "finger",
+    "tease"
+   ]
+  },
+  {
+   "id": "fr-018",
+   "category": "action",
+   "intensity": "intense",
+   "text": "Pin {partner1} down gently and kiss every part of {partner1_possessive} neck.",
+   "tags": [
+    "kissing",
+    "neck",
+    "dominant"
+   ]
+  },
+  {
+   "id": "fr-019",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Hold {partner1_possessive} face in your hands and look into {partner1_possessive} eyes for 30 seconds.",
+   "tags": [
+    "gaze",
+    "face",
+    "intimate"
+   ]
+  },
+  {
+   "id": "fr-020",
+   "category": "action",
+   "intensity": "steamy",
+   "text": "Kiss the inside of {partner1_possessive} thigh while looking up at {partner1_object}.",
+   "tags": [
+    "kissing",
+    "thigh",
+    "intimate"
+   ]
+  },
+  {
+   "id": "fr-021",
+   "category": "action",
+   "intensity": "moderate",
+   "text": "Massage {partner1_possessive} lower back in slow circles.",
+   "tags": [
+    "massage",
+    "back",
+    "touch"
+   ]
+  },
+  {
+   "id": "fr-022",
+   "category": "action",
+   "intensity": "gentle",
+   "text": "Nuzzle your face into {partner1_possessive} neck and breathe deeply.",
+   "tags": [
+    "nuzzle",
+    "neck",
+    "comfort"
+   ]
+  }
+ ],
+ "__aftercare": [
+  {
+   "id": "tod-d14",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Hold each other quietly. Check in: how are you feeling?",
+   "tags": [
+    "aftercare",
+    "check-in",
+    "cuddling"
+   ]
+  },
+  {
+   "id": "tod-d15",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Get water for each other and sit together for a moment.",
+   "tags": [
+    "aftercare",
+    "care",
+    "hydration"
+   ]
+  },
+  {
+   "id": "wyr-023",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Wrap up together. How was that experience?",
+   "tags": [
+    "aftercare",
+    "check-in"
+   ]
+  },
+  {
+   "id": "wyr-024",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Hold each other close. Breathe together for a minute.",
+   "tags": [
+    "aftercare",
+    "cuddling",
+    "care"
+   ]
+  },
+  {
+   "id": "sapphic-017",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Pull {partner1} close and hold {partner1_object} quietly. No words needed.",
+   "tags": [
+    "aftercare",
+    "cuddling"
+   ]
+  },
+  {
+   "id": "fr-023",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Pull {partner1} close and hold {partner1_object} quietly.",
+   "tags": [
+    "aftercare",
+    "cuddling"
+   ]
+  },
+  {
+   "id": "fr-024",
+   "category": "aftercare",
+   "intensity": "gentle",
+   "text": "Kiss {partner1_possessive} forehead and whisper that {partner1_subject} is loved.",
+   "tags": [
+    "aftercare",
+    "kissing",
+    "words"
+   ]
+  }
+ ]
+}
