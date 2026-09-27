@@ -2,6 +2,8 @@
 
 A queer-friendly adult couples game, built around consent. Vite + React + TypeScript + Tailwind CSS + shadcn/ui.
 
+**Signature EstroBunny theme** — hot pink + powder blue heat curve, livelier lace lattice, chaotic-cute microcopy. Consent first, chaos optional. Behaving: 404.
+
 ## What's in here
 
 - **Four real games**, each with its own engine — not one component reused four times:
