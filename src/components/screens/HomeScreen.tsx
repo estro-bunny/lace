@@ -23,9 +23,9 @@ export function HomeScreen({ onRitual, onDecks, onEditProfiles }: HomeScreenProp
   return (
     <div className="flex flex-1 flex-col justify-center gap-5 px-[26px] pb-[calc(env(safe-area-inset-bottom)+26px)] pt-2 text-center">
       <div>
-        <h1 className="font-display text-[29px] font-medium tracking-[-0.02em]">Ready</h1>
+        <h1 className="font-display text-[29px] font-medium tracking-[-0.02em]">Ready when you are</h1>
         <p className="text-[14px] leading-relaxed text-silk-faint">
-          queer couple games, filtered through what you're both okay with
+          queer couple games, filtered through what you're both actually okay with. chaos optional. consent not.
         </p>
       </div>
 
@@ -100,7 +100,7 @@ export function HomeScreen({ onRitual, onDecks, onEditProfiles }: HomeScreenProp
             className="flex w-full items-center gap-1.5 text-[12px] text-silk-faint hover:text-silk"
           >
             <Pencil className="h-3 w-3 flex-none" />
-            {houseRule ? `House rule: "${houseRule}"` : "Add a house rule for tonight (optional)"}
+            {houseRule ? `House rule: "${houseRule}"` : "Add a house rule for tonight (optional, but cute)"}
           </button>
         )}
       </div>
@@ -109,7 +109,7 @@ export function HomeScreen({ onRitual, onDecks, onEditProfiles }: HomeScreenProp
         Set tonight's tension
       </Button>
       <Button variant="outline" onClick={onDecks}>
-        Skip to decks
+        Skip the ritual, go wild
       </Button>
       <button
         onClick={onEditProfiles}
