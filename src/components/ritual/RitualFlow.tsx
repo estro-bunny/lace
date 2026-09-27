@@ -46,9 +46,9 @@ export function RitualFlow({ onComplete, onSkip }: RitualFlowProps) {
   const gap = higher - baseline;
   const gapCopy =
     gap < 0.5
-      ? { head: "Close enough", body: "You're both around the same place tonight.", line: "barely a gap" }
+      ? { head: "Close enough", body: "You're both around the same place tonight. Perfect chaos alignment.", line: "barely a gap" }
       : gap < 1.3
-        ? { head: "A bit of a gap", body: "One of you is further along than the other tonight. That's completely normal.", line: "a noticeable gap" }
+        ? { head: "A bit of a gap", body: "One of you is further along than the other tonight. That's completely normal. We'll meet in the middle.", line: "a noticeable gap" }
         : { head: "Pretty different tonight", body: "You're starting from different places. The deck will lean gentle and let you build from there — together.", line: "a real gap" };
 
   if (profiles.length < 2) {
@@ -77,7 +77,7 @@ export function RitualFlow({ onComplete, onSkip }: RitualFlowProps) {
           <div className="text-center">
             <div className="font-display text-[25px] font-medium tracking-[-0.018em]">{profiles[who].name}</div>
             <div className="mt-1.5 text-[13px] leading-normal text-silk-faint">
-              How much do you want, tonight — just for you to see.
+              How much do you want, tonight — just for you to see. No pressure. No performance.
             </div>
           </div>
           <VerticalGauge value={gauge} onChange={setGauge} />
@@ -95,7 +95,7 @@ export function RitualFlow({ onComplete, onSkip }: RitualFlowProps) {
           </div>
           <h2 className="font-display text-[22px] font-medium tracking-[-0.018em]">Hand it to {profiles[1].name}</h2>
           <p className="max-w-[260px] text-[13px] leading-relaxed text-silk-faint">
-            Look away while they answer. Their number is theirs to keep.
+            Look away while they answer. Their number is theirs to keep. No peeking. Chaos has rules.
           </p>
           <HoldButton
             label="Hold — I'm ready"
