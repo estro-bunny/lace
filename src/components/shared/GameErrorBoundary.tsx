@@ -51,7 +51,7 @@ export class GameErrorBoundary extends Component<Props, State> {
           </div>
           <p className="font-display text-[18px] font-medium">This game hit a snag</p>
           <p className="max-w-[240px] text-[12.5px] leading-relaxed text-silk-faint">
-            Nothing about your profiles or limits was lost. The safeword below still works normally.
+            Blame the compiler, not each other. Profiles and limits are fine. Safeword below still works.
           </p>
           <Button
             variant="outline"
