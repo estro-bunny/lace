@@ -54,6 +54,43 @@ body {
   }
 }
 
+/* ── soft heat keyframes ──
+   Designed to feel like the lace is breathing.
+   Strength is gated by --heat (opacity already tracks intensity),
+   so gentle stays almost still and intense actually lives. */
+@keyframes heat-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.045);
+    opacity: 0.88;
+  }
+}
+
+@keyframes heat-shimmer {
+  0%,
+  100% {
+    opacity: var(--heat);
+  }
+  50% {
+    /* shimmer peaks a little above the base heat */
+    opacity: calc(var(--heat) * 1.35);
+  }
+}
+
+@keyframes heat-glow-pulse {
+  0%,
+  100% {
+    filter: blur(44px);
+  }
+  50% {
+    filter: blur(52px);
+  }
+}
+
 /* ── the lace lattice background ── */
 .lace-lattice {
   position: absolute;
@@ -77,6 +114,8 @@ body {
   transition:
     stroke 1s cubic-bezier(0.22, 0.61, 0.36, 1),
     opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* soft thread shimmer — more visible as --heat rises */
+  animation: heat-shimmer 5.5s ease-in-out infinite;
 }
 .lace-bloom {
   position: absolute;
@@ -93,7 +132,12 @@ body {
     transparent 68%
   );
   filter: blur(44px);
+  transform-origin: 50% 40%;
   transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* slow breathe + soft blur pulse */
+  animation:
+    heat-breathe 7s ease-in-out infinite,
+    heat-glow-pulse 7s ease-in-out infinite;
 }
 
 /* ── deck / prompt card ── */
@@ -250,7 +294,13 @@ body {
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .lace-bloom,
+  .lace-lattice .heat {
+    animation: none !important;
   }
 }
 
